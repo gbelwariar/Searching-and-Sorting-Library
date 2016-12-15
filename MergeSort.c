@@ -10,7 +10,7 @@ struct record
 	char name[100];
 }RecordArray[1000];
 
-void mergeSort(void *arr, int left, int right, int (*comp)(void *, void *), void (*merge)(void *, int , int , int , int (*)(void *, void *)));
+void (*mergeSort)(void *arr, int left, int right, int (*comp)(void *, void *), void (*merge)(void *, int , int , int , int (*)(void *, void *)));
 
 // A comparator function to compare by ID.
 int compareByID(void *p1, void *p2)
