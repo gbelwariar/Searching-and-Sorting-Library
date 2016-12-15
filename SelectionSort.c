@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 			scanf("%[^\n]s", RecordArray[i].name);
 		}
 	
-		selectionSortRecords(choice, recordsCount);
+		selectionSortRecords((strcmp(argv[1], "1") == 0) ? 1 : 2, recordsCount);
 		printf("\nSelection Sort-\n");
 		printRecords(recordsCount);
 	}
