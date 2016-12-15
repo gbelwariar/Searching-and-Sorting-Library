@@ -31,12 +31,12 @@ int compareByID(void *arr, int index1, int index2)
 	struct record *elem1 = ((struct record *)(arr) + index1);	
 	struct record *elem2 = ((struct record *)(arr) + index2);
 
-   if ( elem1->recordID < elem2->recordID)
-      return -1;
-   else if (elem1->recordID > elem2->recordID)
-      return 1;
-   else
-      return 0;
+	if ( elem1->recordID < elem2->recordID)
+		return -1;
+	else if (elem1->recordID > elem2->recordID)
+		return 1;
+	else
+		return 0;
 }
 
 // A comparator function to compare by name.
@@ -112,4 +112,3 @@ int main(int argc, char *argv[])
 	}
 	return 0;
 }
-
