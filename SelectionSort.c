@@ -10,7 +10,7 @@ struct record
 	char name[100];
 }RecordArray[1000];
 
-void selectionSort(void *arr, int count, int (*comp)(void *, int , int ), void (*swap)(void *, int , int ));
+void (*selectionSort)(void *arr, int count, int (*comp)(void *, int , int ), void (*swap)(void *, int , int ));
 
 // Swap the records in the list.
 void swapRecords(void *arr, int index1, int index2)
