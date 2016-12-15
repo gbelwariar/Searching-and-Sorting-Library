@@ -145,7 +145,7 @@ int main(int argc, char *argv[])
 			scanf("%[^\n]s", RecordArray[i].name);
 		}
 				
-		mergeSortRecords(choice, recordsCount);
+		mergeSortRecords((strcmp(argv[1], "1") == 0) ? 1 : 2, recordsCount);
 		printf("\nMerge Sort-\n");
 		printRecords(recordsCount);
 	}
