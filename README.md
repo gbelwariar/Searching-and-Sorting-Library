@@ -9,9 +9,9 @@ The main objective of this project is to provide the same **flexibility** as C's
 **Linux Users**
 
 1. To generate a shared library first compile the library (*LIBRARY.c*) with the -fPIC (position independent code) flag-
-***gcc -shared -o libLIBRARY.so -fPIC LIBRARY.c***.
-**2.** Compile the sorting/searching algorithm by using the command- *** gcc FILENAME.c -ldl ***, e.g. to run the QuickSort write- ***gcc QuickSort.c -ldl***.
-**3.** There are two fields in our structure- ID(integer type) and name(string type). Hence pass **1** to search/sort by ID and **2** to search/sort by name, i.e- "***./a.out 1***" and "***./a.out 2***" respectively.
+***gcc -shared -o libLIBRARY.so -fPIC LIBRARY.c***.<br/>
+2. Compile the sorting/searching algorithm by using the command- *** gcc FILENAME.c -ldl ***, e.g. to run the QuickSort write- ***gcc QuickSort.c -ldl***.<br/>
+3. There are two fields in our structure- ID(integer type) and name(string type). Hence pass **1** to search/sort by ID and **2** to search/sort by name, i.e- "***./a.out 1***" and "***./a.out 2***" respectively.
 
 ** Windows Users**
 
