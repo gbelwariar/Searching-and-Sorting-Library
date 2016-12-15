@@ -10,18 +10,18 @@ The main objective of this project is to provide the same **flexibility** as C's
 
 1. To generate a shared library first compile the library (*LIBRARY.c*) with the "*-fPIC*" (position independent code) flag-
 ***gcc -shared -o libLIBRARY.so -fPIC LIBRARY.c***.<br/>
-2. Compile the sorting/searching algorithm by using the command- ***gcc FILENAME.c -ldl*** , e.g. to run the QuickSort write- ***gcc QuickSort.c -ldl***. The "*-ldl*" used to link the dynamic library. <br/>
-3. There are two fields in our structure- ID(integer type) and name(string type). Hence pass **1** to search/sort by ID and **2** to search/sort by name, i.e- "***./a.out 1***" and "***./a.out 2***" respectively.
+2. Compile the sorting/searching algorithm by using the command- ***gcc FILENAME.c -ldl*** , e.g. to run the QuickSort write- ***gcc QuickSort.c -ldl***. The "*-ldl*" is used to link the dynamic library. <br/>
+3. There are two fields in our structure- ID(integer type) and name(string type). Hence, pass **1** to search/sort by ID and **2** to search/sort by name, i.e- "***./a.out 1***" and "***./a.out 2***" respectively.
 
 **Windows Users**
 
-Since the methods like- ***dlopen()***, ***dlsym()*** are only available in Linux hence the above steps won't work in Windows OS.
-Although one can put the functions in the library (*LIBRARY.c*) in a header file, say- *LIBRARY.h* and then include the header in the code where the library functions are to be called by adding- ***#include "LIBRARY.h"*** after setting up the proper path for the compiler to locate the given header file.
+Since the methods like- ***dlopen()***, ***dlsym()*** are only available in Linux, hence the above steps won't work in Windows OS.
+Although one can put the functions present in the library (*LIBRARY.c*) in a header file, say- *LIBRARY.h* and then include the header in the code where those functions are to be called by adding- ***#include "LIBRARY.h"*** after setting up the proper path for the compiler to find it.
 
 ## Phases of the Projects
 
 **1. Requirements** - Any C/C++ Compiler would work.<br/>
-**2. Design** - The searching and sorting functions are kept inside a separate file (*LIBRARY.c*) instead of where they have been called to avoid duplication of the code.<br/>
+**2. Design** - The searching and sorting functions are kept inside a separate file (*LIBRARY.c*) to keep the design more simple.<br/>
 **3. Implementation** - All projects are implemented using C.<br/>
 **4. Testing/Debugging** - Several tests have been run to verify the correctnees of the program. One can also find all my Test Case Generator Programs and Sample Test Cases [here](https://gbelwariar.github.io/Self-Made-Test-Case-Generators/)<br/>
 
