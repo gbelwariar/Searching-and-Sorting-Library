@@ -31,11 +31,11 @@ int compareByID(void *arr, int index1, int index2)
 	struct record *elem2 = ((struct record *)(arr) + index2);
 
 	if ( elem1->recordID < elem2->recordID)
-    	return -1;
+    		return -1;
 	else if (elem1->recordID > elem2->recordID)
-    	return 1;
+    		return 1;
    	else
-      	return 0;
+      		return 0;
 }
 
 // A comparator function to compare by name.
@@ -55,11 +55,11 @@ void quickSortRecords(int choice, int recordsCount)
 		case 1 :
 		{
 			quickSort(RecordArray, 0, recordsCount-1, &compareByID, &swapRecords);
-		    break;
+		    	break;
 		}
 		case 2 :
 		{
-		    quickSort(RecordArray, 0, recordsCount-1, &compareByName, &swapRecords);
+		    	quickSort(RecordArray, 0, recordsCount-1, &compareByName, &swapRecords);
 			break;
 		}
 	}
