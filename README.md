@@ -6,14 +6,14 @@ The main objective of this project is to provide the same **flexibility** as C's
 
 ## How to use the code?
 
-**Linux Users - **
+**Linux Users**
 
 **1.** To generate a shared library first compile the library (*LIBRARY.c*) with the -fPIC (position independent code) flag-
 ***gcc -shared -o libLIBRARY.so -fPIC LIBRARY.c***.
 **2.** Compile the sorting/searching algorithm by using the command- *** gcc FILENAME.c -ldl ***, e.g. to run the QuickSort write- ***gcc QuickSort.c -ldl***.
 **3.** There are two fields in our structure- ID(integer type) and name(string type). Hence pass **1** to search/sort by ID and **2** to search/sort by name, i.e- "***./a.out 1***" and "***./a.out 2***" respectively.
 
-** Windows Users - **
+** Windows Users**
 
 Since the methods like- ***dlopen()***, ***dlsym()*** are only available in Linux hence thw above steps won't work in Windows OS.
 Although one can put the functions in the library (*LIBRARY.c*) in a header file, say- *LIBRARY.h* and then just simply include the header in the code by using- ***#include "LIBRARY.h"*** after setting up the proper path for the compiler to locate the header file.
