@@ -23,5 +23,5 @@ Although one can put the functions present in the library (*LIBRARY.c*) in a hea
 **1. Requirements** - Any C/C++ Compiler would work.<br/>
 **2. Design** - The searching and sorting functions are kept inside a separate file (*LIBRARY.c*) to keep the design more simple.<br/>
 **3. Implementation** - All projects are implemented using C.<br/>
-**4. Testing/Debugging** - Several tests have been run to verify the correctnees of the program. One can also find all my Test Case Generator Programs and Sample Test Cases [here](https://gbelwariar.github.io/Self-Made-Test-Case-Generators/)<br/>
+**4. Testing/Debugging** - Several tests have been run to verify the correctness of the program. One can also find all my Test Case Generator Programs and Sample Test Cases [here](https://gbelwariar.github.io/Self-Made-Test-Case-Generators/)<br/>
 
