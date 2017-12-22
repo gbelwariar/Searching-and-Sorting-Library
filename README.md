@@ -25,3 +25,8 @@ Although one can put the functions present in the library (*LIBRARY.c*) in a hea
 **3. Implementation** - All projects are implemented using C.<br/>
 **4. Testing/Debugging** - Several tests have been run to verify the correctness of the program. One can also find all my Test Case Generator Programs and Sample Test Cases [here](https://gbelwariar.github.io/Self-Made-Test-Case-Generators/)<br/>
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars2.githubusercontent.com/u/14831291?s=400&v=4" width="100px;"/><br /><sub>Rachit Belwariar</sub>](https://github.com/gbelwariar)<br />| 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
